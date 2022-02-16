@@ -40,7 +40,7 @@
     </div>
 
     <form class="form-stacked" action="" method="post" autocomplete="off">
-      {% csrf_token %}
+
 
       {{ login_form|as_crispy_errors }}
 
@@ -55,7 +55,7 @@
     </form>
   {% else %}
     <form class="form-stacked" action="" method="post">
-      {% csrf_token %}
+
       <div class="sso-link">
         <div class="sso-grid flex">
           <div class="column left-column">

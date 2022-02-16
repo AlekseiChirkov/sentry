@@ -32,7 +32,7 @@
             {% blocktrans %}Help us keep your account safe by confirming your identity.{% endblocktrans %}
           </p>
             <form class="form-stacked" action="" method="post" autocomplete="off">
-                {% csrf_token %}
+
 
                 {% if form.password.errors %}
                     <div class="help-block error">{% trans "Your password was not valid." %}</div>

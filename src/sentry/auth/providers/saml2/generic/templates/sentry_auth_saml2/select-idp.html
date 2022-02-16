@@ -27,7 +27,7 @@
   <div class="tab-pane {% if op == "url" %}active{% endif %}" id="metadata-url">
     <p>Provide a Metadata URL to retrieve the IdP details.</p>
     <form action="" method="post" class="form-stacked">
-      {% csrf_token %}
+
 
       {% if plugin %}
           <input type="hidden" name="plugin" value="{{ plugin.slug }}" />
@@ -52,7 +52,7 @@
   <div class="tab-pane {% if op == "xml" %}active{% endif %}" id="xml">
     <p>Provide the raw Metadata XML IdP details.</p>
     <form action="" method="post" class="form-stacked">
-      {% csrf_token %}
+
 
       {% if plugin %}
           <input type="hidden" name="plugin" value="{{ plugin.slug }}" />
@@ -79,7 +79,7 @@
       Provide your individual Identity Provider metadata fields.
     </p>
     <form action="" method="post" class="form-stacked">
-      {% csrf_token %}
+
 
       {% if plugin %}
           <input type="hidden" name="plugin" value="{{ plugin.slug }}" />

@@ -8,7 +8,7 @@
 
 {% block auth_main %}
   <form class="form-stacked" action="." method="post" autocomplete="off">
-    {% csrf_token %}
+
 
     <div>
       <p><strong>{{ application.name }}</strong> is requesting access to your Sentry account ({{ user.username }}):</p>

@@ -16,7 +16,7 @@
             <div class="pull-right">
               <a href="#" id="sign-out">{% trans "Sign out" %}</a>
               <form style="display:none;" name="modalLogoutForm" action="{% url 'sentry-logout' %}?next={{ request.get_full_path|urlencode }}" method="POST">
-                {% csrf_token %}
+
               </form>
             </div>
           {% endif %}

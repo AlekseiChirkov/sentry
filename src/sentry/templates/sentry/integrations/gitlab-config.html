@@ -30,7 +30,7 @@
 <h3>{% trans "Step 2: Connect Sentry with your App" %}</h3>
   <p>{% trans "Add your GitLab App credentials to Sentry." %}</p>
   <form action="" method="post" class="form-stacked">
-    {% csrf_token %}
+
     <input type="hidden" name="provider" value="gitlab" />
 
     {{ form|as_crispy_errors }}

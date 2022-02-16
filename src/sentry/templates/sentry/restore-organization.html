@@ -9,7 +9,7 @@
     <h3>{% trans "Deletion Scheduled" %}</h3>
     {% if pending_deletion %}
     <form class="form-stacked" action="" method="post">
-      {% csrf_token %}
+
       <p>The <strong>{{ deleting_organization.name }}</strong> organization is currently scheduled for deletion.</p>
       <p>{% blocktrans %}Would you like to cancel this process and restore the organization back to the original state{% endblocktrans %}</p>
       <p><button type="submit" class="btn btn-primary">{% trans "Restore Organization" %}</button></p>

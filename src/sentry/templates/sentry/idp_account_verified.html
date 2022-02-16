@@ -9,7 +9,7 @@
     </p>
 
     <form class="form-stacked" action="/auth/login/{{org}}/" method="post">
-        {% csrf_token %}
+
         <button class="btn btn-primary" type="submit">{% trans "Continue" %}</button>
     </form>
 {% endblock %}

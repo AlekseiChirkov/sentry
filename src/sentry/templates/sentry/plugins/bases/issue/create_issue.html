@@ -59,7 +59,7 @@
 
         <div class="tab-pane{% if op == "create" or not op %} active{% endif %}" id="create">
             <form class="form-stacked" action="" method="post">
-                {% csrf_token %}
+
                 {{ form|as_crispy_errors }}
                 <input type="hidden" name="next" value="{{ next }}" />
                 <input type="hidden" name="op" value="create" />
@@ -77,7 +77,7 @@
         {% if can_link_existing_issues %}
             <div class="tab-pane{% if op == "link" %} active{% endif %}" id="link">
                 <form class="form-stacked" action="" method="post">
-                    {% csrf_token %}
+
                     {{ link_form|as_crispy_errors }}
                     <input type="hidden" name="next" value="{{ next }}" />
                     <input type="hidden" name="op" value="link" />

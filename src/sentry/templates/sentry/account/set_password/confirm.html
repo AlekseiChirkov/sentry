@@ -10,7 +10,7 @@
 
     <p>{% trans "Set your account password below." %}</p>
     <form method="POST" action="">
-        {% csrf_token %}
+
         {{ form|as_crispy_errors }}
 
         {% for field in form %}

@@ -29,7 +29,7 @@
 <h3>{% trans "Custom Source Control Management Setup" %}</h3>
   <p>{% trans "Add your basic source control information in order to create an integration. You will be able to edit this information later." %}</p>
   <form action="" method="post" class="form-stacked">
-    {% csrf_token %}
+
     <input type="hidden" name="provider" value="custom_scm" />
 
     {{ form|as_crispy_errors }}
